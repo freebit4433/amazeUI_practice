@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>估分系统</title>
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="../assets/css/amazeui.css">
+    <link rel="stylesheet" href="static/css/enter.css">
+</head>
+<body>
+<header>
+    <p id="header-exit">＜</p>
+    <p>阿虎医学考试估分系统</p>
+</header>
+
+<div class="am-container am-container-center">
+    <p>2016执业（助理）医师考试在线估分系统</p>
+    <img src="static/img/img.png" alt="" class="am-img-responsive">
+    <p>友情提示：在线估分系统将于考试后尽快开通</p>
+    <p>总预约人数</p>
+    <div id="animate-number"></div>
+    <br>
+    <span id="enter-button">
+        <img src="static/img/jiesuo.png" alt="">
+        点击分享到朋友圈开始预约
+    </span>
+    <p>估分系统由阿虎医学app提供支持</p>
+</div>
+
+
+
+
+
+<script src="../assets/js/jquery.min.js"></script>
+<script>
+    var num = '48291';
+    for(var n = 0;n<num.length;n++){
+        var oneNum = num.substring(n,n+1);
+        $("#animate-number").append('<span class="animate-number-one">'+oneNum+'</span>&nbsp;');
+    }
+    var deviceHeight = window.screen.height;
+    //var headerHeight = $("header").css('height');
+
+    //$(".am-container-center").css('height', a+'px');
+
+</script>
+</body>
+</html>

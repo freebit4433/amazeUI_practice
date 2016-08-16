@@ -1,0 +1,96 @@
+body {
+    background-color: #F3F3F3;
+}
+
+#wrapper {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.am-oneCategory-title {
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 1.2rem 1rem;
+}
+
+.content-left {
+    width: 4.3em;
+    float: left;
+    margin-right: 0.7em;
+}
+
+.content-left img {
+    width: 100%;
+}
+
+.content-center {
+    width:auto;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+.content-center p {
+    margin: 0;
+}
+
+.am-tikuXingxing {
+    height: 0.7em;
+}
+
+.am-tikuXiazai {
+    color: #aaaaaa;
+}
+
+.content-right {
+    float: right;
+}
+
+
+
+.test-left {
+    width: 80px;
+    height: 50px;
+    background:#F39;
+    float: left;
+    display: inline-block;
+}
+.test-center {
+    width: auto;
+    margin-left: 90px;
+    margin-right: 60px;
+
+}
+.test-right {
+    width: 50px;
+    height: 50px;
+    background:#F99;
+    float: right;
+    display: inline-block;
+}
+
+
+
+@media (min-width: 320px) {
+    .content {font-size: 15px;}
+}
+
+@media (min-width: 375px) {
+    .content {font-size: 16px;}
+}
+
+@media (min-width: 414px) {
+    .content {font-size: 17px;}
+}
+
+@media (min-width: 1000px) {
+    .content {font-size: 20px;}
+}
