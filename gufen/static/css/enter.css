@@ -1,5 +1,7 @@
-
-header {
+#header-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
     font-size: 1em;
     height: 2.5em;
     background-color: #028FF2;
@@ -17,8 +19,15 @@ header p {
     padding-left: 0.5em;
 }
 
-.am-container-center {
+
+
+.am-container-enter {
     text-align: center;
+
+}
+
+.am-container-enter p {
+    margin: 0;
 }
 
 #animate-number {
