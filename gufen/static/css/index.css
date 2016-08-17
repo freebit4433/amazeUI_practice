@@ -1,0 +1,106 @@
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+}
+
+#header-content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #ffffff;
+}
+
+#header-content p {
+    margin: 0;
+}
+
+#header-title {
+    text-align: center;
+    font-size: 1.25em;
+    padding-bottom: 0.6em;
+}
+
+#circle-progress {
+    width: 37%;
+    padding-top: 2em;
+    margin: 0 auto;
+}
+
+#total-grade {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#paihangbang {
+    font-size: 1.25em;
+    float: right;
+    padding: 0 0.1em;
+    color: #A311FF;
+    border: 1px solid #A311FF;
+}
+
+#percent-num {
+    position: absolute;
+    bottom: 0.2em;
+    text-align: center;
+}
+
+.border-right {
+    border-right: 1px solid #fff;
+}
+
+#course-list {
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+}
+
+.course-list-gufen>div:nth-child(1) {
+    line-height: 3.25em;
+}
+.course-list-gufen>div:nth-child(2) {
+    line-height: 3.25em;
+    color: #999999;
+}
+.course-list-gufen>div:nth-child(3){
+    height: 3.25em;
+}
+.course-list-gufen>div:nth-child(3)>div:after {
+    content: '估分';
+    background-color: #FF6633;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) {
+    body {font-size: 15px;}
+}
+
+@media (min-width: 375px) {
+    body {font-size: 16px;}
+}
+
+@media (min-width: 414px) {
+    body {font-size: 18px;}
+}
+
+@media (min-width: 1000px) {
+    body {font-size: 22px;}
+}

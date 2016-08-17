@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>估分系统（主页）</title>
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="../assets/css/amazeui.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+
+<header>
+    <img src="static/img/index-background.png" alt="" class="am-img-responsive">
+    <div id="header-content">
+        <p id="header-title">2016年执业药师考试在线估分</p>
+        <p class="am-fl">&nbsp;&nbsp;&nbsp;总分：&nbsp;700分</p>
+        <p class="am-fr" style="color: #A311FF">选择其他考试&gt;&gt;&nbsp;&nbsp;</p>
+        <div id="circle-progress">
+            <div id="loader"></div>
+            <p id="total-grade" style="margin-top: -2em;">总成绩</p><!--有CSS顺序问题-->
+        </div>
+        <p id="paihangbang" style="margin-top: -1.5em; margin-right: 1em;">排行榜</p>
+        <div class="am-g" id="percent-num">
+            <div class="am-u-sm-4 border-right">
+                <p>30%</p>
+                <p>正确率</p>
+            </div>
+            <div class="am-u-sm-4 border-right">
+                <p>25%</p>
+                <p>打败考生</p>
+            </div>
+            <div class="am-u-sm-4">
+                <p>100%</p>
+                <p>通过概率</p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="am-container" id="course-list">
+    <div class="am-g course-list-gufen">
+        <div class="am-u-sm-4">综合能力</div>
+        <div class="am-u-sm-4">450分</div>
+        <div class="am-u-sm-4 am-vertical-align"><div class="am-vertical-align-middle"></div></div>
+    </div>
+    <hr>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="static/js/jquery.percentageloader-0.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var deviceWidth = document.documentElement.clientWidth;
+        $("#header-content").css('height',(800*deviceWidth)/1080 + 'px');
+
+        var $loader;
+        var totalKb = 700;
+        var kb = 0;
+        var xxx = parseInt(deviceWidth * 0.37);
+        $loader  = $("#loader").percentageLoader({
+            width : xxx,
+            height : xxx,
+            progress : 1
+        });
+
+        var animateFunc = function() {
+            kb += 10;
+            if (kb > totalKb) {
+                kb = totalKb;
+            }
+            $loader.setProgress(kb / totalKb,kb);
+            $loader.setValue(kb.toString() + 'kb');
+            if (kb < 600) {
+                setTimeout(animateFunc, 25);
+            }
+        }
+
+        setTimeout(animateFunc, 25);
+    });
+
+
+</script>
+</body>
+</html>
