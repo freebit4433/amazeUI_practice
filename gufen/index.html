@@ -6,7 +6,6 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>估分系统（主页）</title>
-
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <link rel="stylesheet" href="../assets/css/amazeui.css">
@@ -44,28 +43,44 @@
 <div class="am-container" id="course-list">
     <div class="am-g course-list-gufen">
         <div class="am-u-sm-4">综合能力</div>
-        <div class="am-u-sm-4">450分</div>
-        <div class="am-u-sm-4 am-vertical-align"><div class="am-vertical-align-middle"></div></div>
+        <div class="am-u-sm-4">尚未估分</div>
+        <div class="am-u-sm-4"><p></p></div>
+    </div>
+    <hr>
+    <div class="am-g course-list-gufenwancheng">
+        <div class="am-u-sm-4">专业实践</div>
+        <div class="am-u-sm-4">350分</div>
+        <div class="am-u-sm-4"><p></p></div>
+    </div>
+    <hr>
+    <div class="am-g course-list-chongxingufen">
+        <div class="am-u-sm-4">专业实践</div>
+        <div class="am-u-sm-4">500分</div>
+        <div class="am-u-sm-4"><p></p></div>
+    </div>
+    <hr>
+    <div class="am-g course-list-gufen">
+        <div class="am-u-sm-4">专业实践</div>
+        <div class="am-u-sm-4">尚未估分</div>
+        <div class="am-u-sm-4"><p></p></div>
     </div>
     <hr>
 </div>
-
-
-
-
-
-
-
-
+<footer>
+    <p>退出估分系统</p>
+</footer>
 
 <script src="../assets/js/jquery.min.js"></script>
 <script src="static/js/jquery.percentageloader-0.1.min.js"></script>
 <script>
     $(document).ready(function(){
+        //处理屏幕适配和弧形进度条的JS开始
         var deviceWidth = document.documentElement.clientWidth;
+        var deviceHeight = window.innerHeight;
         $("#header-content").css('height',(800*deviceWidth)/1080 + 'px');
-
+        $("body").css('height',deviceHeight);
         var $loader;
+        var score = 599;
         var totalKb = 700;
         var kb = 0;
         var xxx = parseInt(deviceWidth * 0.37);
@@ -74,23 +89,20 @@
             height : xxx,
             progress : 1
         });
-
         var animateFunc = function() {
-            kb += 10;
-            if (kb > totalKb) {
-                kb = totalKb;
+            kb += 9;
+            if (kb > score) {
+                kb = score;
             }
             $loader.setProgress(kb / totalKb,kb);
             $loader.setValue(kb.toString() + 'kb');
-            if (kb < 600) {
+            if (kb < score) {
                 setTimeout(animateFunc, 25);
             }
         }
-
         setTimeout(animateFunc, 25);
+        //处理屏幕适配和弧形进度条的JS结束
     });
-
-
 </script>
 </body>
 </html>

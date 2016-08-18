@@ -58,8 +58,16 @@ header {
     border-right: 1px solid #fff;
 }
 
+.border-right-gray {
+    border-right: 1px solid #aaaaaa;
+}
+
 #course-list {
     text-align: center;
+}
+
+#course-list p {
+    margin: 0;
 }
 
 hr {
@@ -73,18 +81,61 @@ hr {
     line-height: 3.25em;
     color: #999999;
 }
-.course-list-gufen>div:nth-child(3){
-    height: 3.25em;
-}
-.course-list-gufen>div:nth-child(3)>div:after {
+.course-list-gufen>div:nth-child(3)>p::after {
     content: '估分';
     background-color: #FF6633;
     color: #fff;
+    padding: 0.2em 1.15em 0.2em 1.15em;
+    border-radius: 0.2em;
+    line-height: 3.25em;
+    /*这里有文字行高，垂直居中问题*/
 }
 
+.course-list-gufenwancheng>div:nth-child(1) {
+    line-height: 3.25em;
+}
+.course-list-gufenwancheng>div:nth-child(2) {
+    line-height: 3.25em;
+    color: #FF6633;
+}
+.course-list-gufenwancheng>div:nth-child(3)>p::after {
+    content: '估分完成';
+    color: #FF6633;
+    line-height: 3.25em;
+}
 
+.course-list-chongxingufen>div:nth-child(1) {
+    line-height: 3.25em;
+}
+.course-list-chongxingufen>div:nth-child(2) {
+    line-height: 3.25em;
+    color: #FF6633;
+}
+.course-list-chongxingufen>div:nth-child(3)>p::after {
+    content: '重新估分';
+    background-color: #FF6633;
+    color: #fff;
+    padding: 0.2em 0.15em 0.2em 0.15em;
+    border-radius: 0.2em;
+    line-height: 3.25em;
+}
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+    color: #028FF2;
+    letter-spacing: 0.1em;
+}
 
+footer>p {
+    display: inline-block;
+    padding: 0.2em 0.8em;
+    border: 1px solid #028FF2;
+    border-radius: 0.2em;
+}
 
 
 
