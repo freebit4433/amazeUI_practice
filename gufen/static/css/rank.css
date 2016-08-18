@@ -1,0 +1,61 @@
+#header-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1em;
+    height: 2.5em;
+    background-color: #028FF2;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+    line-height: 2.5em;
+    color: #ffffff;
+}
+
+#header-exit {
+    position: absolute;
+    padding-left: 0.5em;
+}
+
+#rank-title {
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1em;
+    margin: 1em 0;
+}
+#rank-title img {
+    height: 1.1em;
+}
+
+.oneItem {
+    padding: 0 1.6em;
+}
+.item-left {
+    float: left;
+}
+.item-right {
+    float: right;
+}
+
+
+
+
+
+
+@media (min-width: 320px) {
+    body {font-size: 15px;}
+}
+
+@media (min-width: 375px) {
+    body {font-size: 16px;}
+}
+
+@media (min-width: 414px) {
+    body {font-size: 18px;}
+}
+
+@media (min-width: 1000px) {
+    body {font-size: 22px;}
+}
