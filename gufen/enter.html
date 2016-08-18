@@ -59,7 +59,7 @@
         var oneNum = num.substring(n,n+1);
         $("#animate-number").append('<span class="animate-number-one">'+oneNum+'</span>&nbsp;');
     }
-    var deviceHeight = window.screen.height;
+    var deviceHeight = window.innerHeight;
     var headerHeight = $("header").height();
     var divide = deviceHeight-headerHeight;
     $(".am-container-enter").css('height', divide+'px');

@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>估分系统（选择考试）</title>
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="../assets/css/amazeui.css">
+    <link rel="stylesheet" href="static/css/select.css">
+</head>
+<body>
+<header>
+    <div id="header-content">
+        <p id="header-exit">＜</p>
+        <p>阿虎医学考试估分系统</p>
+    </div>
+    <div id="header-placeholder"></div>
+</header>
+
+<div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+    <ul class="am-tabs-nav am-cf">
+        <li class="am-active"><a href="[data-tab-panel-0]">医师</a></li>
+        <li class=""><a href="[data-tab-panel-1]">药师</a></li>
+        <li class=""><a href="[data-tab-panel-2]">护士&amp;护师</a></li>
+    </ul>
+    <div class="am-tabs-bd">
+        <div data-tab-panel-0 class="am-tab-panel am-active">
+            <div class="one-exam">
+                <p class="am-text-truncate">2016口腔执业（助理）医师资格考试</p>
+                <div class="am-g one-exam-select">
+                    <div class="am-u-sm-4"><p class="exam-active" exam-id="1">执业</p></div>
+                    <div class="am-u-sm-8"><p exam-id="2">执业助理</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="one-exam">
+                <p class="am-text-truncate">2016临床执业（助理）医师资格考试</p>
+                <div class="am-g one-exam-select">
+                    <div class="am-u-sm-4"><p exam-id="3">执业</p></div>
+                    <div class="am-u-sm-8"><p exam-id="4">执业助理</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="one-exam">
+                <p class="am-text-truncate">2016中医执业（助理）医师资格考试</p>
+                <div class="am-g one-exam-select">
+                    <div class="am-u-sm-4"><p exam-id="5">执业</p></div>
+                    <div class="am-u-sm-8"><p exam-id="6">执业助理</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="one-exam">
+                <p class="am-text-truncate">2016中西医结合执业（助理）医师资格考试</p>
+                <div class="am-g one-exam-select">
+                    <div class="am-u-sm-4"><p exam-id="7">药师</p></div>
+                    <div class="am-u-sm-8"><p exam-id="8">执业助理</p></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div data-tab-panel-1 class="am-tab-panel ">
+            <div class="one-exam">
+                <p class="am-text-truncate">2016执业药师（中药师）医师资格考试</p>
+                <div class="am-g one-exam-select">
+                    <div class="am-u-sm-4"><p exam-id="9">药师</p></div>
+                    <div class="am-u-sm-8"><p exam-id="10">中药师</p></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div data-tab-panel-2 class="am-tab-panel ">
+            <div class="one-exam">
+                <p class="am-text-truncate">2016执业护士资格考试</p>
+                <div class="am-g one-exam-select">
+                    <div class="am-u-sm-12"><p exam-id="11">护士</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="one-exam">
+                <p class="am-text-truncate">2016初级护师资格考试</p>
+                <div class="am-g one-exam-select">
+                    <div class="am-u-sm-12"><p exam-id="12">护师</p></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>已选择<span id="already-selected">xxx</span></p>
+    <p>确定</p>
+</footer>
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/amazeui.js"></script>
+<script>
+    $(document).ready(function(){
+        //处理屏幕适配和交互JS开始
+        $("#header-placeholder").css('height',$("#header-content").css('height'));
+        var deviceHeight = window.innerHeight;
+        $("body").css('height',deviceHeight);
+        $(".one-exam-select p").each(function(){
+            $(this).click(function () {
+                //alert($(this).attr('exam-id'));
+                $(".one-exam-select p").removeClass('exam-active');
+                $(this).addClass('exam-active');
+                $("#already-selected").text($(this).attr('exam-id'));
+            })
+        });
+        //处理屏幕适配和交互JS结束
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+#header-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 1em;
+    height: 2.5em;
+    background-color: #028FF2;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+    line-height: 2.5em;
+    color: #ffffff;
+}
+
+#header-exit {
+    position: absolute;
+    padding-left: 0.5em;
+}
+
+.am-tabs-bd {
+    border: none;
+}
+
+hr {
+    margin: 0;
+}
+
+.one-exam {
+    margin: 0.8em 0;
+}
+
+.one-exam p {
+    margin: 0;
+}
+
+.one-exam-select>div>p {
+    /*在这里应用行高会撑高p元素的height，应用border出错*/
+    display: inline-block;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.2em;
+    padding: 0.1em 0.8em;
+    margin: 0.5em 0 0 0;
+}
+
+.exam-active {
+    background-color: #028FF2;
+    color: #ffffff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer>p:nth-child(1) {
+    margin: 0;
+}
+footer>p:nth-child(2) {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #028FF2;
+    font-size: 1.25em;
+    letter-spacing: 0.3em;
+    padding: 0.3em 4em;
+    border-radius: 0.3em;
+}
+
+
+
+
+
+
+
+@media (min-width: 320px) {
+    body {font-size: 15px;}
+}
+
+@media (min-width: 375px) {
+    body {font-size: 16px;}
+}
+
+@media (min-width: 414px) {
+    body {font-size: 18px;}
+}
+
+@media (min-width: 1000px) {
+    body {font-size: 22px;}
+}
