@@ -15,35 +15,41 @@
 <?php
 $myself = array(
     'rankNum' => 80,
-    'imgUrl' => 'xxx',
-    'nickname' => '西瓜',
-    'score' => '600分'
+    'imgUrl' => '',
+    'nickname' => '西瓜士水电费发的啥地方是否',
+    'score' => '600'
 );
 $rank = array(
     array(
         'rankNum' => 1,
         'imgUrl' => 'xxx',
-        'nickname' => '夏天',
-        'score' => '700分'
+        'nickname' => '18149843245',
+        'score' => '700'
     ),
     array(
         'rankNum' => 2,
         'imgUrl' => 'xxx',
-        'nickname' => '西瓜',
-        'score' => '680分'
+        'nickname' => '三闾大夫就哦了',
+        'score' => '680'
     ),
     array(
         'rankNum' => 3,
         'imgUrl' => 'xxx',
-        'nickname' => '芒果',
-        'score' => '650分'
+        'nickname' => '昵称不可以为空',
+        'score' => '650'
     ),
     array(
         'rankNum' => 4,
         'imgUrl' => 'xxx',
-        'nickname' => '哈密瓜',
-        'score' => '600分'
+        'nickname' => '今年的winter没有下雪选项',
+        'score' => '600'
     ),
+    array(
+        'rankNum' => 5,
+        'imgUrl' => 'xxx',
+        'nickname' => '厚德载物自强不息',
+        'score' => '600'
+    )
 );
 ?>
 
@@ -61,32 +67,41 @@ $rank = array(
     <span class="am-text-bottom">排行榜TOP100</span>
 </div>
 
-<div class="oneItem">
+<div class="oneItem item-myself">
     <div class="item-left">
-        <span>98</span>
-        <img src="static/img/headimg.png" alt="">
+        <span><?php echo $myself['rankNum'] ?></span>
+        <img class="am-circle head-img" src="<?php echo $myself['imgUrl'] ?>" onerror="this.src='static/img/defaultHeadImg.png'" alt="">
     </div>
-    <div class="item-right">
-        650分
-    </div>
-    <div class="item-center">
-        夏天
-    </div>
+    <div class="item-right"><?php echo $myself['score'] ?>分</div>
+    <div class="item-center am-text-truncate"><?php echo $myself['nickname'] ?></div>
+    <hr>
     <div class="am-cf"></div>
 </div>
 
-
-
-
-
-
-
-
+<?php foreach($rank as $v){ ?>
+<div class="oneItem <?php if($v['rankNum'] < 4){echo 'item-numx';} ?>">
+    <div class="item-left">
+        <?php
+        if($v['rankNum'] < 4){
+            echo "<img src=\"static/img/num" . $v['rankNum'] . ".png\">";
+        }else{
+            echo "<span>" . $v['rankNum'] . "</span>";
+        }
+        ?>
+        <img class="am-circle head-img" src="<?php echo $v['imgUrl'] ?>" onerror="this.src='static/img/defaultHeadImg.png'" alt="">
+    </div>
+    <div class="item-right"><?php echo $v['score']; ?>分</div>
+    <div class="item-center am-text-truncate"><?php echo $v['nickname']; ?></div>
+    <hr>
+    <div class="am-cf"></div>
+</div>
+<?php } ?>
 
 <script src="../assets/js/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
         $("#header-placeholder").css('height',$("#header-content").css('height'));
+        $(".item-center").css('padding-right','1em');
     })
 </script>
 </body>

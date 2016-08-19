@@ -29,14 +29,37 @@ header p {
     height: 1.1em;
 }
 
+hr {
+    margin: 0;
+}
+
 .oneItem {
     padding: 0 1.6em;
+    line-height: 4.34em;
 }
 .item-left {
     float: left;
 }
 .item-right {
     float: right;
+}
+.head-img {
+    height: 3.08em;
+    margin-right: 1.1em;
+    /*写成padding-right图片会变形*/
+}
+.item-left>span {
+    display: inline-block;
+    width: 2em;
+    margin-right: 0.5em;
+    text-align: center;
+}
+.item-numx>.item-left>img:nth-child(1) {
+    width: 1.67em;
+    margin: 0 0.665em 0 0.165em;
+}
+.item-myself {
+    background-color: #FFF2F0;
 }
 
 
