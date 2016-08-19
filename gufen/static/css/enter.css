@@ -21,13 +21,16 @@ header p {
 
 
 
-.am-container-enter {
+.am-container-center {
     text-align: center;
+}
+
+.am-container-center p {
 
 }
 
-.am-container-enter p {
-    margin: 0;
+#title {
+    font-size: 1.125em;
 }
 
 #animate-number {
@@ -38,23 +41,26 @@ header p {
     display: inline-block;
     min-width: 10px;
     color: #ffffff;
-    line-height: 1.8em;
+    line-height: 1.9em;
     width: 1.6em;
-    height: 1.83em;
+    height: 1.85em;
     background-image: url("../img/animate-number.png");
     background-size: 1.6em 1.83em;
+    background-repeat: no-repeat;
 }
 
 #enter-button {
     background-color: #028FF2;
     color: #ffffff;
     display: inline-block;
-    padding: 0.6em 1.5em;
+    line-height: 1em;
+    padding: 0.8em 1.5em;
     border-radius: 0.3em;
+
 }
 
 #enter-button img {
-    height: 1em;
+    height: 1.2em;
 }
 
 .color-gray {

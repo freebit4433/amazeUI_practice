@@ -100,8 +100,10 @@ $rank = array(
 <script src="../assets/js/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
+        //处理屏幕适配JS开始
         $("#header-placeholder").css('height',$("#header-content").css('height'));
         $(".item-center").css('padding-right','1em');
+        //处理屏幕适配JS结束
     })
 </script>
 </body>

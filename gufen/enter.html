@@ -21,49 +21,34 @@
     <div id="header-placeholder"></div>
 </header>
 
-<div class="am-container am-container-enter">
-    <p>2016执业（助理）医师考试在线估分系统</p>
-    <br>
+<div class="am-container am-container-center">
+    <p id="title">2016执业(助理)医师考试在线估分系统</p>
     <img src="static/img/img.png" alt="" class="am-img-responsive">
     <br>
     <p class="color-gray">友情提示：在线估分系统将于考试后尽快开通</p>
-    <br>
-    <br>
     <p>总预约人数</p>
-    <br>
     <div id="animate-number"></div>
-    <br>
     <br>
     <p id="enter-button">
         <img src="static/img/jiesuo.png" alt="">
-        点击分享到朋友圈开始预约
+        <span class="am-text-bottom">点击分享到朋友圈开始预约</span>
     </p>
-    <br>
-    <br>
-    <br>
     <p>估分系统由阿虎医学app提供支持</p>
-
 </div>
-
-
-
-
 
 <script src="../assets/js/jquery.min.js"></script>
 <script>
-    $("#header-placeholder").css('height',$("#header-content").css('height'));
-
-    //估分人数在这里设置
-    var num = '48291';
-    for(var n = 0;n<num.length;n++){
-        var oneNum = num.substring(n,n+1);
-        $("#animate-number").append('<span class="animate-number-one">'+oneNum+'</span>&nbsp;');
-    }
-    var deviceHeight = window.innerHeight;
-    var headerHeight = $("header").height();
-    var divide = deviceHeight-headerHeight;
-    $(".am-container-enter").css('height', divide+'px');
-
+    $(document).ready(function(){
+        //处理屏幕适配JS开始
+        $("#header-placeholder").css('height',$("#header-content").css('height'));
+        //估分人数在这里设置
+        var num = '48291';
+        for(var n = 0;n<num.length;n++){
+            var oneNum = num.substring(n,n+1);
+            $("#animate-number").append('<span class="animate-number-one">'+oneNum+'</span>&nbsp;');
+        }
+        //处理屏幕适配JS结束
+    })
 
 </script>
 </body>
