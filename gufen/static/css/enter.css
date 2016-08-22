@@ -1,3 +1,7 @@
+html,body {
+    height: 100%;
+}
+
 #header-content {
     position: fixed;
     top: 0;
@@ -5,7 +9,6 @@
     font-size: 1em;
     height: 2.5em;
     background-color: #028FF2;
-    text-align: center;
 }
 
 header p {
@@ -13,20 +16,20 @@ header p {
     line-height: 2.5em;
     color: #ffffff;
 }
-
-#header-exit {
-    position: absolute;
+#header-left {
+    float: left;
     padding-left: 0.5em;
 }
-
-
-
-.am-container-center {
+#header-right {
+    float: right;
+    padding-right: 0.5em;
+}
+#header-center {
     text-align: center;
 }
 
-.am-container-center p {
-
+.am-container {
+    text-align: center;
 }
 
 #title {
@@ -56,7 +59,6 @@ header p {
     line-height: 1em;
     padding: 0.8em 1.5em;
     border-radius: 0.3em;
-
 }
 
 #enter-button img {
@@ -66,6 +68,20 @@ header p {
 .color-gray {
     color: #aaaaaa;
 }
+
+.footer1 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.footer2 {
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+
 
 
 

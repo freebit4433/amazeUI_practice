@@ -15,26 +15,31 @@
 <body>
 <header>
     <div id="header-content">
-        <p id="header-exit">＜</p>
-        <p>阿虎医学考试估分系统</p>
+        <p id="header-left">其他考试</p>
+        <p id="header-right">&emsp;&emsp;退出</p>
+        <p id="header-center">临床执业医师</p>
     </div>
     <div id="header-placeholder"></div>
 </header>
 
-<div class="am-container am-container-center">
+<div class="am-container">
     <p id="title">2016执业(助理)医师考试在线估分系统</p>
     <img src="static/img/img.png" alt="" class="am-img-responsive">
-    <br>
+
     <p class="color-gray">友情提示：在线估分系统将于考试后尽快开通</p>
     <p>总预约人数</p>
     <div id="animate-number"></div>
-    <br>
+
     <p id="enter-button">
         <img src="static/img/jiesuo.png" alt="">
         <span class="am-text-bottom">点击分享到朋友圈开始预约</span>
     </p>
-    <p>估分系统由阿虎医学app提供支持</p>
+
 </div>
+
+<footer class="footer1">
+    <p>估分系统由阿虎医学app提供支持</p>
+</footer>
 
 <script src="../assets/js/jquery.min.js"></script>
 <script>
@@ -47,6 +52,13 @@
             var oneNum = num.substring(n,n+1);
             $("#animate-number").append('<span class="animate-number-one">'+oneNum+'</span>&nbsp;');
         }
+        var deviceHeight = window.innerHeight;
+        var heightCenter = deviceHeight - $("#header-content").height() - $("footer").height();
+        $(".am-container").css("height",heightCenter);
+        /*$(".am-container").height();
+        if(a < 0){
+            alert("ddd");
+        }*/
         //处理屏幕适配JS结束
     })
 
