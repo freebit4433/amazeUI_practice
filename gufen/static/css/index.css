@@ -120,21 +120,26 @@ hr {
     line-height: 3.25em;
 }
 
-footer {
+.footer1 {
     position: absolute;
     bottom: 0;
+    /*margin-top: 1em;*/
     width: 100%;
     text-align: center;
-    font-size: 1.25em;
-    color: #028FF2;
-    letter-spacing: 0.1em;
 }
-
+.footer2 {
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+}
 footer>p {
     display: inline-block;
     padding: 0.2em 0.8em;
     border: 1px solid #028FF2;
     border-radius: 0.2em;
+    font-size: 1.25em;
+    color: #028FF2;
+    letter-spacing: 0.1em;
 }
 
 

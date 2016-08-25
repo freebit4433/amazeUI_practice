@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>警告框、页面底部、左侧淡入</title>
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="../assets/css/amazeui.css">
+    <style>
+        #myAlert {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="myAlert" class="am-alert am-alert-success" data-am-alert>
+    <button type="button" class="am-close">&times;</button>
+    <p>警告框</p>
+</div>
+
+
+<div class="am-container">
+    <button type="button" class="am-btn" id="mybtn">打开</button>
+    <button type="button" class="am-btn am-btn-danger" id="close">关闭</button>
+</div>
+
+
+
+
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/amazeui.js"></script>
+<script>
+    $("#mybtn").click(function(){
+        $("#myAlert").show();
+    });
+
+    $("#close").click(function(){
+        $("#myAlert").alert('close');
+    });
+
+</script>
+</body>
+</html>

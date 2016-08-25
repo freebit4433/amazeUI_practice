@@ -66,7 +66,7 @@
     </div>
     <hr>
 </div>
-<footer>
+<footer class="footer1">
     <p>退出估分系统</p>
 </footer>
 
@@ -101,6 +101,15 @@
             }
         }
         setTimeout(animateFunc, 25);
+        var headerHeight = $("header").height();
+        var centerHeight = $("#course-list").height();
+        var footerHeight = $("footer").height();
+        if(deviceHeight-headerHeight-centerHeight > footerHeight){
+            //do nothing
+        }else{
+            $("footer").removeClass();
+            $("footer").addClass("footer2");
+        }
         //处理屏幕适配和弧形进度条的JS结束
     });
 </script>
