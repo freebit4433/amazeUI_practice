@@ -6,6 +6,7 @@
     height: 2.5em;
     background-color: #028FF2;
     text-align: center;
+    z-index: 1005;
 }
 
 header p {
@@ -49,9 +50,13 @@ hr {
     color: #ffffff;
 }
 
-footer {
+.footer1 {
     position: absolute;
     bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.footer2 {
     width: 100%;
     text-align: center;
 }

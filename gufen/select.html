@@ -89,7 +89,7 @@
         </div>
     </div>
 </div>
-<footer>
+<footer class="footer1">
     <p>已选择<span id="already-selected">xxx</span></p>
     <p>确定</p>
 </footer>
@@ -110,6 +110,15 @@
                 $("#already-selected").text($(this).attr('exam-id'));
             })
         });
+        var headerHeight = $("header").height();
+        var centerHeight = $(".am-tabs").height();
+        var footerHeight = $("footer").height();
+        if(deviceHeight-headerHeight-centerHeight > footerHeight){
+            //do nothing
+        }else{
+            $("footer").removeClass();
+            $("footer").addClass("footer2");
+        }
         //处理屏幕适配和交互JS结束
     });
 </script>
