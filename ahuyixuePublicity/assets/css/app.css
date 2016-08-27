@@ -1,0 +1,128 @@
+p {
+    margin: 0;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+#banner {
+    display: block;
+}
+
+.zone-title {
+    font-size: 1.1em;
+    padding: 0.35em 0 0.2em 1em;
+    background-color: #F3F3F3;
+}
+
+#videoZone>.am-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.video-item-left {
+    width: 7.81em;
+    float: left;
+}
+.video-item-right {
+    text-indent: 1em;
+}
+.video-item-title {
+    line-height: 2em;
+    margin-right: 1em;
+}
+.video-item-peopleNum {
+    padding-top: 0.9em;
+    line-height: 0.5em;
+}
+.video-item-peopleNum>img {
+    height: 1.1em;
+}
+.video-item-shiting {
+    float: right;
+    padding-right: 1em;
+    color: #FF5A60;
+    border: 1px solid #FF5A60;
+    border-radius: 0.2em;
+    margin: 0.5em 1em 0 0;
+}
+.video-item-shiting:visited {
+    color: #FF5A60;
+}
+
+#video-more {
+    text-align: center;
+}
+#video-more>a {
+    color: #aaaaaa;
+}
+
+
+#tikuZone>.am-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.am-u-sm-4 {
+    text-align: center;
+}
+.tiku-item-img {
+    height: 4.34em;
+    margin: 0 auto;
+}
+.tiku-item-title {
+    line-height: 2em;
+}
+.tiku-item-xingxing {
+    height: 0.8em;
+    line-height: 0.5em;
+}
+.tiku-item-xingxing>img {
+    height: 100%;
+}
+.tiku-item-qianwang {
+    display: inline-block;
+    color: #FF5A60;
+    padding: 0 1em;
+    margin: 0.6em 0;
+    background-image: url("../img/qianwang.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.tiku-item-qianwang:visited {
+    color: #FF5A60;
+}
+
+
+#jinnangZone>.am-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+@media (min-width: 320px) {
+    body {font-size: 15px;}
+}
+
+@media (min-width: 375px) {
+    body {font-size: 16px;}
+}
+
+@media (min-width: 414px) {
+    body {font-size: 18px;}
+}
+
+@media (min-width: 800px) {
+    body {font-size: 22px;}
+}
