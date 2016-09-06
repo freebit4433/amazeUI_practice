@@ -1,0 +1,27 @@
+#wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.zt-slider-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 8;
+    color: #fff;
+}
+.zt_slider_shadow {
+    position: absolute;
+    background: url(../img/flshadow.png) bottom no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.am-slider-a1 .am-control-nav li a.am-active {
+    background-color: #bbbbbb;
+    cursor: default;
+}
